@@ -22,6 +22,19 @@ $ python manage.py collectstatic
 
 $ heroku local
 ```
+pipenv
+```
+$ git clone https://github.com/heroku/python-getting-started.git
+$ cd python-getting-started
+
+$ sudo apt install libpq-dev
+$ python3 -m pipenv install
+
+$ python manage.py migrate
+$ python manage.py collectstatic
+
+$ heroku local
+```
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
 

@@ -3,7 +3,7 @@ from django.urls import path, include
 from django.contrib import admin
 from rest_framework import routers
 
-from hello.models import UserViewSet
+from hello.models import UserViewSet, GroupViewSet
 
 admin.autodiscover()
 import hello.views
@@ -13,6 +13,7 @@ import hello.views
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
+router.register(r'groups', GroupViewSet)
 
 # To add a new path, first import the app:
 # import blog

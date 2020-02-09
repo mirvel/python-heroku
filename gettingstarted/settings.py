@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "hello",
     'todos.apps.TodosConfig',
+    'apis.apps.ApisConfig',
 
     
 ]
